@@ -94,6 +94,12 @@ public class TelaCalculadora {
                 BarraDeTexto.setText(BarraDeTexto.getText() + 0);
             }
         });
+        btn16.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                BarraDeTexto.setText(" ");
+            }
+        });
     }
 
     public static void main(String[] args) {

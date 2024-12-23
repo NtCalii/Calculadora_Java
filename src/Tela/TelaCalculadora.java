@@ -1,6 +1,8 @@
 package Tela;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class TelaCalculadora {
     private JPanel TelaFundo;
@@ -22,6 +24,77 @@ public class TelaCalculadora {
     private JButton btn10;
     private JButton btn15;
     private JButton btn16;
+
+    public TelaCalculadora() {
+        btn1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                BarraDeTexto.setText(BarraDeTexto.getText() + 1);
+            }
+        });
+
+        btn2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                BarraDeTexto.setText(BarraDeTexto.getText() + 2);
+            }
+        });
+
+        btn3.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                BarraDeTexto.setText(BarraDeTexto.getText() + 3);
+            }
+        });
+
+        btn4.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                BarraDeTexto.setText(BarraDeTexto.getText() + 4);
+            }
+        });
+
+        btn5.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                BarraDeTexto.setText(BarraDeTexto.getText() + 5);
+            }
+        });
+        btn6.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                BarraDeTexto.setText(BarraDeTexto.getText() + 6);
+            }
+        });
+
+        btn7.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                BarraDeTexto.setText(BarraDeTexto.getText() + 7);
+            }
+        });
+
+        btn8.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                BarraDeTexto.setText(BarraDeTexto.getText() + 8);
+            }
+        });
+
+        btn9.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                BarraDeTexto.setText(BarraDeTexto.getText() + 9);
+            }
+        });
+
+        btn0.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                BarraDeTexto.setText(BarraDeTexto.getText() + 0);
+            }
+        });
+    }
 
     public static void main(String[] args) {
         JFrame frame = new JFrame("TelaCalculadora");

@@ -25,6 +25,13 @@ public class TelaCalculadora {
     private JButton btn15;
     private JButton btn16;
 
+    private double num1;
+    private double num2;
+    private String operador;
+    private double result;
+    private double calcular;
+
+
     public TelaCalculadora() {
         btn1.addActionListener(new ActionListener() {
             @Override
@@ -102,13 +109,50 @@ public class TelaCalculadora {
             }
         });
 
+        btn13.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    num1 = Double.parseDouble(BarraDeTexto.getText());
+                    operador = "+";
+                    BarraDeTexto.setText("");
+                } catch (NumberFormatException ex) {
+                    BarraDeTexto.setText("Erro!");
+                }
+            }
+        });
+
         btn16.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 BarraDeTexto.setText(" ");
             }
         });
-    }
+        //////////////////////////////////////////////////////////
+        btn15.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    num2 = Double.parseDouble(BarraDeTexto.getText());
+                    switch (operador) {
+                        case "+":
+                            result = num1 + num2;
+                            break;
+                        default:
+                            result = 0;
+                            break;
+                    }
+
+                    BarraDeTexto.setText(String.valueOf(result));
+
+                } catch (NumberFormatException ex) {
+                    BarraDeTexto.setText("Erro!");
+                }
+            }
+        });
+        //////////////////////////////////////////////////////////
+
+    }// fim do construtor
 
     public static void main(String[] args) {
         JFrame frame = new JFrame("TelaCalculadora");

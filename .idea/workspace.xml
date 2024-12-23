@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="578ae45f-2ffa-4cd2-abc7-afe7c31f1607" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Tela/TelaCalculadora.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tela/TelaCalculadora.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Tela/TelaCalculadora.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tela/TelaCalculadora.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

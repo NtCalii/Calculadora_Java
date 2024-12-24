@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="578ae45f-2ffa-4cd2-abc7-afe7c31f1607" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Domain/CalculadoraP.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +41,7 @@
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.TelaCalculadora">
+  <component name="RunManager" selected="Application.CalculadoraP">
     <configuration name="CalculadoraP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Domain.CalculadoraP" />
       <module name="Calculadora" />
@@ -71,8 +70,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TelaCalculadora" />
         <item itemvalue="Application.CalculadoraP" />
+        <item itemvalue="Application.TelaCalculadora" />
       </list>
     </recent_temporary>
   </component>

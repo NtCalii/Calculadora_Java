@@ -117,7 +117,46 @@ public class TelaCalculadora {
                     operador = "+";
                     BarraDeTexto.setText("");
                 } catch (NumberFormatException ex) {
-                    BarraDeTexto.setText("Erro!");
+                    BarraDeTexto.setText("Erro! Limpe a tela");
+                }
+            }
+        });
+
+        btn14.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    num1 = Double.parseDouble(BarraDeTexto.getText());
+                    operador = "-";
+                    BarraDeTexto.setText("");
+                } catch (NumberFormatException ex) {
+                    BarraDeTexto.setText("Erro! Limpe a tela");
+                }
+            }
+        });
+
+        btn12.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    num1 = Double.parseDouble(BarraDeTexto.getText());
+                    operador = "*";
+                    BarraDeTexto.setText("");
+                } catch (NumberFormatException ex) {
+                    BarraDeTexto.setText("Erro! Limpe a tela");
+                }
+            }
+        });
+
+        btn11.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    num1 = Double.parseDouble(BarraDeTexto.getText());
+                    operador = "/";
+                    BarraDeTexto.setText("");
+                } catch (NumberFormatException ex) {
+                    BarraDeTexto.setText("Erro! Limpe a tela");
                 }
             }
         });
@@ -138,15 +177,27 @@ public class TelaCalculadora {
                         case "+":
                             result = num1 + num2;
                             break;
+                        case "-":
+                            result = num1 - num2;
+                            break;
+                        case "*":
+                            result = num1 * num2;
+                            break;
+                        case "/":
+                            if (num2 == 0) {
+                                BarraDeTexto.setText("Erro: Divisão por zero");
+                                return;
+                            }
+                            result = num1 / num2;
+                            break;
                         default:
                             result = 0;
-                            break;
                     }
 
                     BarraDeTexto.setText(String.valueOf(result));
 
                 } catch (NumberFormatException ex) {
-                    BarraDeTexto.setText("Erro!");
+                    BarraDeTexto.setText("Erro! Limpe a tela");
                 }
             }
         });

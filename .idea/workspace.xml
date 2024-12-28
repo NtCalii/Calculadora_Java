@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="578ae45f-2ffa-4cd2-abc7-afe7c31f1607" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Domain/Calculadora.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Domain/CalculadoraTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/CalculadoraP.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +37,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.CalculadoraP.executor": "Run",
+    "Application.CalculadoraTest.executor": "Run",
     "Application.TelaCalculadora.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "284",
@@ -41,9 +45,22 @@
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.CalculadoraP">
-    <configuration name="CalculadoraP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Domain.CalculadoraP" />
+  <component name="RunManager" selected="Application.CalculadoraTest">
+    <configuration name="Calculadora" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Domain.Calculadora" />
+      <module name="Calculadora" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalculadoraTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Domain.CalculadoraTest" />
       <module name="Calculadora" />
       <extension name="coverage">
         <pattern>
@@ -70,6 +87,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CalculadoraTest" />
         <item itemvalue="Application.CalculadoraP" />
         <item itemvalue="Application.TelaCalculadora" />
       </list>
